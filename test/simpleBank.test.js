@@ -14,9 +14,9 @@ var SimpleBank = artifacts.require("./SimpleBank.sol");
 contract("SimpleBank", function (accounts) {
   const [contractOwner, alice] = accounts;
   const deposit = web3.utils.toBN(2);
-
+  
   beforeEach(async () => {
-    instance = await SimpleBank.new();
+    instance = await SimpleBank.new(); 
   });
 
   it("ready to be solved!", async() => {
